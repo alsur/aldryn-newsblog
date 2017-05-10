@@ -76,7 +76,7 @@ class CreateNewsBlogArticleForm(BaseFormMixin, TranslatableModelForm):
 
     class Meta:
         model = Article
-        fields = ['title', 'app_config', 'content']
+        fields = ['title', 'app_config']
         # The natural widget for app_config is meant for normal Admin views and
         # contains JS to refresh the page on change. This is not wanted here.
         widgets = {'app_config': forms.Select()}
